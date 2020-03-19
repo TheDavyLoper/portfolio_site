@@ -497,9 +497,7 @@ h3 { font-size: var(--fs-h3) }
   font-size: var(--fs-body);
 }
 
-.footer-logo-link img {
-  max-width: 120px;
-  height: auto;
-  padding-top: .45em;
+.footer--link {
+  font-weight: var(--fw-bold);
 }
 
