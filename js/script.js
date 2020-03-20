@@ -9,7 +9,7 @@ const close = document.getElementById('close-toggle')
 hamburger.addEventListener('click', ()=> {
   navUl.classList.toggle('show');
   hamburger.style.display = "none";
-  close.style.display = "block"
+  close.style.display = "block";
 })
 
 close.addEventListener('click', ()=> {
