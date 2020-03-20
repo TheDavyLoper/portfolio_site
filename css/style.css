@@ -225,6 +225,15 @@ h3 { font-size: var(--fs-h3) }
   }
 }
 
+@media (min-width: 769px) {
+  .close {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
 /*  Intro section  */
 
 .intro {
@@ -326,6 +335,7 @@ h3 { font-size: var(--fs-h3) }
     margin-left: auto;
     margin-right: auto;
   }
+ 
 }
 
 
