@@ -6,20 +6,42 @@ const navLink = document.querySelectorAll('.nav__item');
 
 const close = document.getElementById('close-toggle')
 
-hamburger.addEventListener('click', ()=> {
-  navUl.classList.toggle('show');
-  hamburger.style.display = "none";
-  close.style.display = "block";
-})
 
-close.addEventListener('click', ()=> {
-  navUl.classList.toggle('show');
-  close.style.display = "none";
-  hamburger.style.display = "block";
-})
+
+const toggle = () => {
+  if (!navUl.classList.contains('show')) {
+    navUl.classList.add('show');
+      navUl.style.height = 'auto';
+
+      let height = navUl.clientHeight + "px";
+
+      navUl.style.height = '0px';
+
+      setTimeout(function () {
+        navUl.style.height = height;
+      }, 0);
+      hamburger.style.display = "none";
+      close.style.display = "block";
+  } else {
+    navUl.style.height = '0px';
+    navUl.addEventListener('transitionend', function () {
+      navUl.classList.remove('show');
+      }, {
+          once: true
+      });
+      close.style.display = "none";
+      hamburger.style.display = "block";
+  }
+}
+    
+hamburger.addEventListener('click', toggle);
+close.addEventListener('click', toggle);
 
 navLink.forEach(link => {
   link.addEventListener('click', () => {
     navUl.classList.remove('show')
+    close.style.display = "none";
+    hamburger.style.display = "block";
   })
+  
 })
