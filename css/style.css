@@ -460,10 +460,22 @@ h3 { font-size: var(--fs-h3) }
 .form input {
   width: 300px;
   height: 40px;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0.5em 2.2em;
   margin-bottom: 1.5em;
   text-align: left;
   border: 2px solid var(--clr-accent);
+}
+
+form .input {
+  position: relative;
+}
+
+form .fas{
+ position: absolute;
+ top: 8px;
+ left: 0;
+ padding-left: .2em;
+ font-size: var(--fs-h3);
 }
 
 .form textarea:focus,
