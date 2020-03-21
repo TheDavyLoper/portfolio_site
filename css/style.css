@@ -462,31 +462,25 @@ h3 { font-size: var(--fs-h3) }
   height: 40px;
   padding: 0.5em;
   margin-bottom: 1.5em;
-  text-align: center;
-  border: 1px solid var(--clr-dark);
+  text-align: left;
+  border: 2px solid var(--clr-accent);
 }
 
 .form textarea:focus,
 .form input:focus {
   outline: none;
-  box-shadow: var(--bs);
-}
-
-.form .label {
-  font-size: var(--fs-h3);
-  font-weight: var(--fw-bold);
-  color: var(--clr-dark);
+  box-shadow: 0.25em 0.25em 0.75em var(--clr-accent),
+  0.125em 0.125em 0.25em var(--clr-accent);
 }
 
 .form .textarea {
   margin-top: 1em;
-  
 }
 
 .form textarea {
   width: 300px;
   padding: 0.5em;
-  border: 1px solid var(--clr-dark);
+  border: 2px solid var(--clr-accent);
 }
 
 .form > div {
