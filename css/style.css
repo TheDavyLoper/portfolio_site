@@ -463,7 +463,7 @@ h3 { font-size: var(--fs-h3) }
   padding: 0.5em 0.5em 0.5em 2.2em;
   margin-bottom: 1.5em;
   text-align: left;
-  border: 2px solid var(--clr-accent);
+  border: 4px solid var(--clr-accent);
 }
 
 form .input {
@@ -476,6 +476,8 @@ form .fas{
  left: 0;
  padding-left: .2em;
  font-size: var(--fs-h3);
+ font-weight: var(--fw-bold);
+ color: rgb(0, 225, 255);
 }
 
 .form textarea:focus,
@@ -492,7 +494,7 @@ form .fas{
 .form textarea {
   width: 300px;
   padding: 0.5em;
-  border: 2px solid var(--clr-accent);
+  border: 4px solid var(--clr-accent);
 }
 
 .form > div {
