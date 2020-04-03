@@ -15,7 +15,8 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #ecf8f8;
+    --clr-accent: #bff7bf;
+    --clr-red: #F50C0C;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -282,6 +283,7 @@ h3 { font-size: var(--fs-h3) }
         grid-area: img;
         min-width: 250px;
         position: relative;
+        border-radius: 50%;
         z-index: 2;
     }    
     
@@ -477,7 +479,7 @@ form .fas{
  padding-left: .2em;
  font-size: var(--fs-h3);
  font-weight: var(--fw-bold);
- color: rgb(0, 225, 255);
+ color: var(--clr-accent);
 }
 
 .form textarea:focus,
@@ -506,7 +508,7 @@ form .fas{
 
 .footer {
   background-color: #111;
-  color: var(--clr-accent);
+  color: var(--clr-light);
   text-align: center;
   padding: 2.5em 0;
   font-size: var(--fs-h3);
@@ -560,6 +562,7 @@ form .fas{
 .footer-text {
   text-align: center;
   font-size: var(--fs-body);
+  color: var(--clr-red);
 }
 
 .footer--link {
