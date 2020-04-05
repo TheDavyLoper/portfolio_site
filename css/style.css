@@ -148,9 +148,9 @@ h3 { font-size: var(--fs-h3) }
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: .5em;
   position: fixed;
   z-index: 20;
+  padding: .2em;
   background-color: var(--clr-dark);
   width: 100%;
   height: auto;
@@ -161,7 +161,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .nav__item  {
-  display: inline;
+  display: inline-block;
   padding: .75em;
   font-weight: var(--fw-bold);
 } 
@@ -176,8 +176,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .logo {
-  max-width: 120px;
-  padding-top: 1em;
+  max-width: 100px;
 }
 
 .hamburger {
@@ -254,6 +253,7 @@ h3 { font-size: var(--fs-h3) }
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 50%;
 }
 
 .section__subtitle--intro {
