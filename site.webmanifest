@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "TheDavyLoper",
+  "short_name": "TD",
   "icons": [
     {
       "src": "favico/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#A8B4FA",
-  "background_color": "#FA7690",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
