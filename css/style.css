@@ -16,7 +16,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #A8B4FA;
-    --clr-red: #FA7690;
+    --clr-red: #F9758F;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -321,7 +321,7 @@ h3 { font-size: var(--fs-h3) }
   width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: #F50C0C;
+  background: var(--clr-red);
   opacity: 0.5;
 }
 
@@ -569,4 +569,8 @@ form .fas{
   font-weight: var(--fw-bold);
 }
 
-@media (max-width: )
+@media (max-width: 767px) {
+  .awards {
+    display: none;
+  }
+}
