@@ -570,7 +570,7 @@ form .fas{
 }
 
 @media (max-width: 767px) {
-  .awards {
+  .small-text, .awards {
     display: none;
   }
 }
